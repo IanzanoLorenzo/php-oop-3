@@ -7,10 +7,23 @@
             parent::__construct($mittente, $contenuto, $destinatario);
             $this->notificaConsegna = $notificaConsegna;
             $this->titolo = 'Email';
+            $this->led = 'Blue';
         }
 
         public function Invia(){
             $this->messaggio = 'Email inviata';
+        }
+
+        public function setAllegato(Allegato $allegato){
+            $this->allegato = $allegato;
+        }
+
+        public function Inoltra(){
+            return 'Email inoltrata';
+        }
+
+        public function Stampa(){
+            return 'Email stampata';
         }
     };
 ?>

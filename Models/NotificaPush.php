@@ -6,10 +6,12 @@
             parent::__construct($mittente, $contenuto, $destinatario);
             $this->icona = $icona;
             $this->titolo = 'Notifica Push';
+            $this->led = 'Yellow';
         }
 
         public function Invia(){
             $this->messaggio = 'Notifica inviata';
         }
+
     };
 ?>

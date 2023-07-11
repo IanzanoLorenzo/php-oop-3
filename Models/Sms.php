@@ -8,6 +8,7 @@
             $this->letto = $letto;
             $this->risposta = $risposta;
             $this->titolo = 'SMS';
+            $this->led = 'Green';
         }
 
         public function Invia(){

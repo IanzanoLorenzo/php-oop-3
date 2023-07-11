@@ -17,6 +17,18 @@
         public function Invia(){
             $messaggio = 'Inviato';
         }
+
+        public function getMittente(){
+            return $this->mittente;
+        }
+
+        public function getContenuto(){
+            return $this->contenuto;
+        }
+
+        public function getDestinatario(){
+            return $this->destinatario;
+        }
     };
 
 
