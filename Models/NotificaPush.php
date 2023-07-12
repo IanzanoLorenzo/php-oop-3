@@ -2,10 +2,9 @@
     class NotificaPush extends SistemaComunicazione {
         public $icona;
 
-        function __construct($mittente, $contenuto, $destinatario, $icona){
-            parent::__construct($mittente, $contenuto, $destinatario);
+        function __construct($mittente, $contenuto, $destinatario, $oggetto, $icona){
+            parent::__construct($mittente, $contenuto, $destinatario, $oggetto);
             $this->icona = $icona;
-            $this->titolo = 'Notifica Push';
             $this->led = 'Yellow';
         }
 

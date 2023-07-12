@@ -3,10 +3,9 @@
         public $allegato;
         public $notificaConsegna;
 
-        function __construct($mittente, $contenuto, $destinatario, $notificaConsegna){
-            parent::__construct($mittente, $contenuto, $destinatario);
+        function __construct($mittente, $contenuto, $destinatario, $oggetto, $notificaConsegna){
+            parent::__construct($mittente, $contenuto, $destinatario, $oggetto);
             $this->notificaConsegna = $notificaConsegna;
-            $this->titolo = 'Email';
             $this->led = 'Blue';
         }
 

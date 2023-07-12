@@ -3,11 +3,10 @@
         public $letto;
         public $risposta;
 
-        function __construct($mittente, $contenuto, $destinatario, $letto, $risposta){
-            parent::__construct($mittente, $contenuto, $destinatario);
+        function __construct($mittente, $contenuto, $destinatario, $oggetto, $letto, $risposta){
+            parent::__construct($mittente, $contenuto, $destinatario, $oggetto);
             $this->letto = $letto;
             $this->risposta = $risposta;
-            $this->titolo = 'SMS';
             $this->led = 'Green';
         }
 
